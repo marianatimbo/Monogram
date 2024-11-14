@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
+/* HEADER */
 header{
-    background-image: url(/png/Imagem_de_fundo.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/png/Imagem_de_fundo.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -46,7 +47,7 @@ header{
     transform: translateX(-50%);
     z-index: 1;
 }
-
+/* aumentar a seta */
 #seta:hover {
     transform: translateX(-50%) scale(1.2);
     transition: transform 0.3s ease;
@@ -101,7 +102,7 @@ header{
     color: #ffd5c9;
     margin: 8px;
 }
-
+/* dropdown para valores */
 #dropdown > li {
     display: inline-block;
     position: relative;
@@ -125,14 +126,14 @@ header{
     background-color: #ffd5c9;
     color :#1a2456; 
 }
-
+/* MAIN */
 main {
     background-color: #f0efed;;
 }
-
+/* para deixar em colunas */
 .primeira_parte {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
     justify-content: center;
     gap: 20px;
     padding: 30px;
@@ -175,7 +176,7 @@ main {
     font-family: sans-serif;
     font-size: 14px;
 }
-
+/* Animação da imagem do produto */
 .imagem_produto {
     display: flex;
     justify-content: right;
@@ -210,6 +211,7 @@ main {
     opacity: 1;
 }
 
+/* tag de pre-ordem fixa */
 .tag {
     position: absolute;
     background-color: #ff8b68;
@@ -223,6 +225,7 @@ main {
     text-align: center;
 }
 
+/* quando for um ultimo produto e ele for impar: */
 .primeira_parte section:last-child:nth-child(odd) {
     width: 1030px;
     height: auto ;
@@ -244,7 +247,7 @@ main {
     height: 453px;
     
 }
-
+/* SEGUNDA PARTE DA MAIN */
 .segunda_parte {
     width: 100%;
     height: 500px;
@@ -281,10 +284,11 @@ main {
 
 }
 
+/* TERCEIRA PARTE DA MAIN */
 .terceira_parte {
     padding: 40px;
 }
-
+/* fiz igual ao do xadrez: */
 .linha {
     display: flex;
     width: calc(33.33% - 10);
@@ -294,16 +298,16 @@ main {
     margin: 10px;
 }
 
-.teste img{
+.produto_menor {
     width: 336px;
     height: 336px;
-    object-fit: cover;
 }
 
-.teste {
+/* pra deixar a imagem com zoom proporcional */
+.produto_menor img{
     width: 336px;
     height: 336px;
-    overflow: hidden;
+    object-fit: cover; 
 }
 
 .shop_now {
@@ -324,6 +328,7 @@ main {
     font-size: 10px;
 }
 
+/* animacao da tag shop now */
 .produto:hover .tag_shop {
     display: block;
 }
@@ -331,6 +336,8 @@ main {
 .produto:hover .preco{
     display: none;
 }
+
+/* FOOTER */
 
 footer {
     background-color: #1a2456;
@@ -385,4 +392,24 @@ footer section {
     text-transform: uppercase;
     font-weight: bold;
     color: #1a2456;
+}
+
+.div_icones {
+    margin-top: 10px;
+    display: flex;
+}
+.icones {
+    margin-right: 5px;
+    display: flex;
+    background-color: #efc2b3;
+    width: 25px;
+    height: 23px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones img {
+    width: 20px;
+    height: 20px;
 }
